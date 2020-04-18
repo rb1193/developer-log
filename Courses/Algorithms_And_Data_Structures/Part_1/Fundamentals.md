@@ -33,4 +33,4 @@ The connected method checks whether or not the roots of the two nodes match. If 
 
 ### Complexity
 
-A good union find data structure runs both the `union` and `connected` methods in O(n log(n)) time. They are logarithmic functions. Logarithmic functions are very powerful because as the size of `n` doubles, the function takes only half as much time again to run. This essentially means, given the rough constant that a CPU can traverse approximately 1,000,000 bits of memory per second, that logarithmic functions take a maximum of five seconds to run even for truly enormous data sets.
+A good union find data structure runs both the `union` and `connected` methods in a worst case of O(log(n)) time. With path compression this can become very close to O(1). They are logarithmic functions. Logarithmic functions are very powerful because as the size of `n` doubles, the function takes only half as much time again to run. This essentially means, given the rough constant that a CPU can traverse approximately 1,000,000 bits of memory per second, that logarithmic functions take a maximum of five seconds to run even for truly enormous data sets.
