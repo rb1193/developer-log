@@ -63,3 +63,7 @@ Search implmentation is identical to BST searching. Insertion may sometimes requ
 ## B-Trees
 
 B-trees generalize the 2-3 tree by allowing up to M-1 keys per node, where M is the largest amount of data that can be processed at one time (e.g. B-trees are often used in filesystem applications, in this case the value of M might be 1024 if that's the largest number of files that can be shown in an explorer). B-trees are stupidly powerful, they make data sets of billions of items searchable in at most 5 operations.
+
+## Kd Trees
+
+Kd trees (k is the number of dimensions) extend ordered symbol tables to multi-dimensional keys. They're useful for performing operations that deal with points in multi-dimensional geometric space. They work by dividing the search space in two at each point added to the tree. The direction of the division at each level of the tree is orthogonal to the preceding level (e.g. a 3D tree is divided by successive horizontal and vertical planes).
