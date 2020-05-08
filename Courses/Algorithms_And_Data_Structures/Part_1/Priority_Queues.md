@@ -8,7 +8,7 @@ Wide range of applications. Event simulation, statistical analysis, graph traver
 
 ## Binary Heap
 
-Elementary priority queues can be useful when the size of the queue is very small, but for most practical implementations a binary heap-based implementation provides better performance (log(N)).
+Elementary priority queues can be useful when the size of the queue is very small, but for most practical implementations a binary heap-based implementation provides better performance (log(N) for enqueue and dequeue).
 
 The binary heap is a binary tree where no node is a larger value than its parent node (or smaller if we want to implement a minimum-based priority queue). Internally, the tree is stored in an array where the top value is stored in position 1 (because we rely on dividing/multiplying by 2 to find positions of parents/children). When a new node is added to the heap, if it is larger than its parent, it is exchanged with its parent recursively until it is smaller than its parent.
 
