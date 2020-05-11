@@ -67,3 +67,9 @@ B-trees generalize the 2-3 tree by allowing up to M-1 keys per node, where M is 
 ## Kd Trees
 
 Kd trees (k is the number of dimensions) extend ordered symbol tables to multi-dimensional keys. They're useful for performing operations that deal with points in multi-dimensional geometric space. They work by dividing the search space in two at each point added to the tree. The direction of the division at each level of the tree is orthogonal to the preceding level (e.g. a 3D tree is divided by successive horizontal and vertical planes).
+
+## Hash Tables
+
+Hash tables allow for constant time inserts and reads but don't permit ordered operations, as the hash keys cannot be ordered. Associative arrays from PHP are really hash tables. Hash codes should ideally be unique, though in Java they don't strictly have to be.
+
+When using a 2D array with a lot of empty/zero entries, it may be more efficient to use an array of hash tables to store the data.
