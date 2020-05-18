@@ -26,3 +26,5 @@ UUIDs have several different types:
 - Uuid3 is name-based (i.e. will always return the same UUID if name is the same) and md5 hashed
 - Uuid4 is cryptographically random
 - Uuid5 is name-based and SHA-1 hashed
+
+To filter on encrypted data, create a hashed column of the data and search using a hash of the input value. Only works for `=` operations.
