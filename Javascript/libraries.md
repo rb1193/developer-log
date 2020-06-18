@@ -35,6 +35,10 @@ return (<Button onClick={() => removeNotification(1)}>Dismiss</Button>)
 
 If notifications was used instead of the ref it would always match the initial value it was set to in the context provider
 
+### Patterns
+
+When using an imperative API in a React component, it's good practice to wrap the API in a hook and return a ref to the API object
+
 ## Redux
 
 The mapStateToProps method in a React component is for fetching properties out of a Redux store and mapping them to the components props

@@ -28,3 +28,7 @@ UUIDs have several different types:
 - Uuid5 is name-based and SHA-1 hashed
 
 To filter on encrypted data, create a hashed column of the data and search using a hash of the input value. Only works for `=` operations.
+
+## User Input
+
+Stripping tags from markdown before parsing it to HTML is not sufficient to sanitize it completely, as you can do things like separate tags across lines to fool markdown parsers. Parse to HTML first and purify the result.
