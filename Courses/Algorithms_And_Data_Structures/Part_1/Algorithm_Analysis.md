@@ -26,4 +26,4 @@ There are four main classifications of algorithm running time:
 - Big O - worst case running time
 - Big Omega - best case running time
 
-e.g. binary search has a best case of Omega(1), but a worst and optimal case of log(N)
+e.g. binary search has a best case of Omega(1), but a worst and optimal case of log(N).
