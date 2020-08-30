@@ -35,6 +35,8 @@ return (<Button onClick={() => removeNotification(1)}>Dismiss</Button>)
 
 If notifications was used instead of the ref it would always match the initial value it was set to in the context provider
 
+When using a useEffect hook that call the setter returned from a useState hook or the dispatcher from useReducer, it is not necessary to pass the setter or dispatcher to useEffect as a dependency. The eslint exhausetive-deps rule should be clever enough to accept this.
+
 ### Patterns
 
 When using an imperative API in a React component, it's good practice to wrap the API in a hook and return a ref to the API object
