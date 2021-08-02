@@ -5,3 +5,5 @@ In PostgreSQL, the auto-increment counter doesn’t get updated if an ID is prov
 It is possible to perform recursive queries in Postgres using the`WITH RECURSIVE` function.
 
 As far as I am able to find out, Postgres does not automatically create indexes for foreign key fields. I thought it did. MySQL does on at least the InnoDB table engine.
+
+Postgres can roll back truncate commands in transactions, which MySQL cannot (as of MySQL version 8)
