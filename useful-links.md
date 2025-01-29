@@ -47,3 +47,5 @@ https://philcalcado.com/2024/12/14/building-ai-products-part-i.html best article
 The Log (principles of distributed systems): https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying 
 
 Database Signal Processing (a language for querying events): https://docs.feldera.com/vldb23.pdf 
+
+Queues vs logs: https://jack-vanlightly.com/blog/2018/5/20/event-driven-architectures-the-queue-vs-the-log
